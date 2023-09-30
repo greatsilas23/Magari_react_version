@@ -1,5 +1,5 @@
 ## first-aid-ms 
-A website that
+A website that displays first aid information to process data.
 
 ## Policy
 ### Introduction 
