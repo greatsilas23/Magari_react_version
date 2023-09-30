@@ -1,70 +1,53 @@
-# Getting Started with Create React App
+## Library-Project 
+Kenya lies across the equator and borders Somalia, Ethiopia, Tanzania, Uganda, Sudan, and the Indian Ocean. British rule in Kenya lasted for nearly 70 years between 1895 and 1963. Their style of governance their approach to land acquisition ownership, use and management their philosophy and patterns of wildlife conservation
+In 1907, the Game Department was established and charged with the responsibility of enforcing game laws and protecting the reserves.
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+## Policy
+### Introduction 
+#### Service Provider 
 
-## Available Scripts
+These terms are between you and Book MS 
+#### Age and eligibility requirements 
 
-In the project directory, you can run:
+In order to use the Book MS and access any content you need to be 13 years of age (or equivalent minimum age in your country) or older, have parental or guardian consent if you are a minor in your home country, have the power to enter into a binding contract with us and not be barred from doing so under any applicable laws, reside in a country where the service is available 
 
-### `npm start`
+### Book MS Provided By Us 
+#### Book MS Options
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+We provide numerous Book MS Options 
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+#### Trials
 
-### `npm test`
+From time to time we or others on our behalf may offer trials of paid subscription for a specified period without payment or at a reduced rate 
+Third Party Applications, Devices and Open Source Software 
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+#### Third-Party Applications, Devices And Open Source Software 
 
-### `npm run build`
+The Book MS may be integrated with, or may otherwise interact with third party applications websites and services and third-party personal computers and mobile handsets tablets wearable devices speakers and other devices 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+#### Service Limitations and Modifications 
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+We use reasonable Care and skill to keep the Book MS operational
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+### Your Use of The Book MS
+#### Creating a Book MS account 
 
-### `npm run eject`
+You may need to create a Book MS Account to use 
+#### Your rights to use the Book MS
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+##### Access to Book MS
+Subject to your compliance with these Terms, we grant you limited, non-exclusive, revocable permission to make personal non-commercial use of the Book MS and the Content
+##### Book MS's proprietary rights
+The Book MS and the content are the property of Book MS or Book MS's licensors 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+#### Payments and cancellation
+You may purchase a Paid Subscription directly from Book MS or through a third party by Paying 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
 
-## Learn More
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
 
-To learn React, check out the [React documentation](https://reactjs.org/).
 
-### Code Splitting
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
 
-### Analyzing the Bundle Size
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
