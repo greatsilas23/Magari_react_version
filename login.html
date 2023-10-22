@@ -2,22 +2,60 @@
 <html lang="en">
 <head>
    <meta name="viewport" content="width=device-width, initial-scale=1">
-   <link rel="stylesheet" href="styles.css">
+<link rel="icon" href="http://picsum.photos/20/20"/>
+   <link rel="stylesheet" href="styles.css"/>
    <title>health-inventory-app</title>
 </head>
 <body>
 
-  <header>
-    <img src="./resources/logo.png" width="40" height="40" alt="logo"/>
- </header>
+  
+</body>
 
-  <div class="container">
+<script type="text/JavaScript">
+/** @Author: wolverine, spiderman, joker, reed
+  * @Date: Sun 22 Oct 2023 16:20:00 +0300
+  * @LastModifiedBy: greatsilas23
+  * @LastModifiedDate: Sun 22 Oct 2023 16:34:00 
+  **/
+
+class Record{
+constructor(){
+this.id= "01"
+this.name = "customer"
+}
+}
+class Stack extends Record{
+constructor(){
+this.stack = new Array()
+}
+push(record){
+record !== null ? return this.stack.push(record) : console.log('err')
+}
+pop(){
+this.stack !== null ? return this.stack.pop() : console.log('err')
+}
+isEmpty(){
+this.stack == null ? return true : return false
+}
+}
+
+class Body{
+constructor(){
+this.header ` <header>
+    <img src="./resources/logo.png" width="40" height="40" alt="logo"/>
+ </header>`
+this.nav = `<nav></nav`
+
+  this.aside = `<aside></aside>`
+
+this.article= `<article>
+
     <section class="card">
 
 
 
 
-      <form action="http://localhost:4000/login" method="post">
+      <form action="" method="post" target="">
 
         <label for="userName">username</label ><br>
 
@@ -41,11 +79,48 @@
 
      </form>
 
-     <form action="http://localhost:4000/register" method="post">
-         <input type="image" src="./resources/register.svg" width="40" height="40"></a>
+   
+    </section></article>`
+this.footer = `<footer>
+  </footer>`
+this.body = this.header.concat(this.nav).concat(this.aside).concat(this.article).concat(this.footer)
+}
+getBody(){
+this.body!== null ? return this.body : console.log('err')
+}
+close(){
+return this.body = null
+}
+}
 
-     </form>
-    </section>
-  </div>
-</body>
+const body = document.querySelector('body')
+
+const form = document.querySelector('form')
+body.onload(() => {
+const sim_start_time = new Date().getMinutes()
+let body = new Body()
+body.innerHTML += body.getBody()
+const sim_end_time = 0
+
+const sim_time = sim_end_time - sim_start_time
+const mean_interrarival = 1.0
+const mean_service = 1.0
+const average_delay = 0.0
+const area_status = 0.0
+const server_utilization = area_status / sim_time
+
+form.addEventListener('submit', () => {
+let result = new Object({userPass: null, userName: null})
+localStorage.setItem(result, new Object({ password: form.userPass, username: form.userName}))
+})
+body.close()
+
+
+
+}).then(() => console.log(new Record().id))
+
+
+</script>
+</html>
+
 
