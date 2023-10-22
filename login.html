@@ -100,8 +100,8 @@ const body = document.querySelector('body')
 const form = document.querySelector('form')
 body.onload(() => {
 const sim_start_time = new Date().getMinutes()
-let body = new Body()
-body.innerHTML += body.getBody()
+let myBody = new Body()
+body.innerHTML += myBody.getBody()
 const sim_end_time = 0
 
 const sim_time = sim_end_time - sim_start_time
@@ -115,7 +115,7 @@ form.addEventListener('submit', () => {
 let result = new Object({userPass: null, userName: null})
 localStorage.setItem(result, new Object({ password: form.userPass, username: form.userName}))
 })
-body.close()
+myBody.close()
 
 
 
