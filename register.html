@@ -6,31 +6,98 @@
   <title>health-inventory-app</title>
 </head>
 <body>
- <header>
+  
+
+</body>
+<script type="text/JavaScript">
+/**
+
+  **/
+
+class Record{
+constructor(){
+this.id = "02"
+this.name = "customer"
+}
+}
+
+class Account{
+constructor(userName, userPass){
+this.username = userName
+this.password = userPass
+this.isRegistered = false
+this.termsAndConditions = `<form action="" on submit="register()" method="" target="">
+<label for="termsAndConditions">
+health-inventory-app
+Kenya lies across the equator and borders Somalia, Ethiopia, Tanzania, Uganda, Sudan, and the Indian Ocean. British rule in Kenya lasted for nearly 70 years between 1895 and 1963. Their style of governance their approach to land acquisition ownership, use and management their philosophy and patterns of wildlife conservation
+
+Policy
+Introduction
+Service Provider
+These terms are between you and health-inventory-app
+
+Age and eligibility requirements
+In order to use the health-inventory-app and access any content you need to be 13 years of age (or equivalent minimum age in your country) or older, have parental or guardian consent if you are a minor in your home country, have the power to enter into a binding contract with us and not be barred from doing so under any applicable laws, reside in a country where the service is available
+
+health-inventory-app Provided By Us
+health-inventory-app Options
+We provide numerous health-inventory-app Options
+
+Trials
+From time to time we or others on our behalf may offer trials of paid subscription for a specified period without payment or at a reduced rate Third Party Applications, Devices and Open Source Software
+
+Third-Party Applications, Devices And Open Source Software
+The health-inventory-app may be integrated with, or may otherwise interact with third party applications websites and services and third-party personal computers and mobile handsets
+
+Service Limitations and Modifications
+We use reasonable Care and skill to keep the health-inventory-app operational
+
+Your Use of The health-inventory-app
+Creating a health-inventory-app account
+You may need to create a health-inventory-app Account to use
+
+Your rights to use the health-inventory-app
+Access to health-inventory-app
+Subject to your compliance with these Terms, we grant you limited, non-exclusive, revocable permission to make personal non-commercial use of the health-inventory-app and the Content
+
+health-inventory-app's proprietary rights
+The health-inventory-app and the content are the property of health-inventory-app or health-inventory-app's licensors
+
+Payments and cancellation
+You may purchase from health-inventory-app
+</label><input id="termsAndConditions"> type="checkbox"/></form>`
+this.account = this.username.concat(this.password)
+}
+getAccount(){
+return this.termsAndConditions
+}
+}
+
+class Body{
+constructor(){
+this.header = `<header>
     <img src="./resources/logo.png" width="40" height="40" alt="logo"/>
 
- </header> 
+ </header>`
 
+this.nav = `<nav></nav>`
+this.aside = `<aside></aside>`
+this.article = `<form action="" method=post" target="">
+<label for="userName">username</label><br><input type="text" id="userName"/><br><label for="userPass"><br><input type="password" id="userPass"/><br>
+${new Account().getTermsAndConditions()}
+<input type="submit"/>
+</form>`
+this.footer =`<footer>health-inventory-app copyright ${&copy;} nyamwas 2023</footer>`
+}
+}
 
-  <div class="container-div">
-    <section class="card">
-      <form action="http://localhost:4000/register" method="post">
-        <label for="userName">username</label>
+function register(){
+let account = new Account("02","admin")
+const form = document.querySelector('form')
 
+form.termsAndConditions.checked == true ? return account.isRegistered = true : console.log('err')
+}
 
-
-        <input type="text" placeholder="example123" required />
-        <label for="userPass"password</label>
-
-
-        <input type="password" placeholder="*****" required/>
-        <label for="passConfirm">confirm password</label>
-        <input type="password" placeholder"*****" required/>
-        <input type="image" src="./resources/register.svg" width="40" height="40" alt="register" />
-      </form>
-    </section>
-  </div>
-</body>
 </html>
 
 
