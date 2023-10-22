@@ -55,7 +55,7 @@ this.article= `<article>
 
 
 
-      <form action="http://localhost:4000/login" method="post">
+      <form action="" method="post" target="">
 
         <label for="userName">username</label ><br>
 
@@ -79,10 +79,7 @@ this.article= `<article>
 
      </form>
 
-     <form action="http://localhost:4000/register" method="post">
-         <input type="image" src="./resources/register.svg" width="40" height="40"></a>
-
-     </form>
+   
     </section></article>`
 this.footer = `<footer>
   </footer>`
@@ -97,6 +94,8 @@ return this.body = null
 }
 
 const body = document.querySelector('body')
+
+const form = document.querySelector('form')
 body.onload(() => {
 const sim_start_time = new Date().getMinutes()
 let body = new Body()
@@ -109,8 +108,18 @@ const mean_service = 1.0
 const average_delay = 0.0
 const area_status = 0.0
 const server_utilization = area_status / sim_time
+
+form.addEventListener('submit', () => {
+let result = new Object({userPass: null, userName: null})
+localStorage.setItem(result, new Object({ password: form.userPass, username: form.userName}))
+})
 body.close()
+
+
+
 }).then(() => console.log(new Record().id))
+
+
 </script>
 </html>
 
