@@ -95,6 +95,7 @@ return this.body = null
 }
 }
 
+function initialize(){
 const body = document.querySelector('body')
 
 const form = document.querySelector('form')
@@ -120,6 +121,10 @@ myBody.close()
 
 
 }).then(() => console.log(new Record().id))
+}
+
+
+initialize()
 
 
 </script>
