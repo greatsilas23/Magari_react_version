@@ -95,13 +95,15 @@ return this.body = null
 }
 }
 
+let myBody = new Body()
+
 function initialize(){
 const body = document.querySelector('body')
 
 const form = document.querySelector('form')
-body.onload(() => {
+
 const sim_start_time = new Date().getMinutes()
-let myBody = new Body()
+
 body.innerHTML += myBody.getBody()
 const sim_end_time = 0
 
@@ -115,16 +117,11 @@ const server_utilization = area_status / sim_time
 form.addEventListener('submit', () => {
 let result = new Object({userPass: null, userName: null})
 localStorage.setItem(result, new Object({ password: form.userPass, username: form.userName}))
-})
+
 myBody.close()
 
 
 
-}).then(() => console.log(new Record().id))
-}
-
-
-initialize()
 
 
 </script>
