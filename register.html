@@ -93,6 +93,14 @@ ${new Account().getTermsAndConditions()}
 <input type="submit"/>
 </form>`
 this.footer =`<footer>health-inventory-app copyright ${&copy;} nyamwas 2023</footer>`
+this.body = this.header.concat(this.nav).concat(this.aside).concat(this.article).concat(this.footer)
+}
+
+getBody(){
+this.body !== null ? return this.body : console.log('err')
+}
+close(){
+return this.body == null
 }
 }
 
@@ -103,6 +111,32 @@ const form = document.querySelector('form')
 form.termsAndConditions.checked == true ? return account.isRegistered = true : console.log('err')
 }
 
+
+const body = document.querySelector('body')
+
+const form = document.querySelector('form')
+body.onload(() => {
+const sim_start_time = new Date().getMinutes()
+let myBody = new Body()
+body.innerHTML += myBody.getBody()
+const sim_end_time = 0
+
+const sim_time = sim_end_time - sim_start_time
+const mean_interrarival = 1.0
+const mean_service = 1.0
+const average_delay = 0.0
+const area_status = 0.0
+const server_utilization = area_status / sim_time
+
+form.addEventListener('submit', () => {
+let result = new Object({userPass: null, userName: null})
+localStorage.setItem(result, new Object({ password: form.userPass, username: form.userName}))
+})
+myBody.close()
+
+
+
+}).then(() => console.log(new Record().id))
 </html>
 
 
