@@ -1,142 +1,139 @@
+<!--A program that displays a questionnaire-->
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-<meta charset="utf-8">
-<meta name="robots" content="follow, no-follow">
-  <link rel="stylesheet" href="styles.css">
-<link rel="icon" href="http://picsum.photos/20/20">
-  <title>health-inventory-app</title>
+	<title>QUESTIONNAIRE</title>
 </head>
 <body>
-  
+	<div id="divBackG">
+		<fieldset>
+			<fieldset>
+				<center>
+				<h4>WELCOME TO COMPUTER SCIENCE</h4><br>
+				<input  id="name" placeholder="FIRST NAME" />
+				<input id="e-mail" placeholder="E-MAIL ADDRESS" /><br>
+				<p id="score"></p>
+			</center>	
+			</fieldset>
+			
+			
+			<legend>ANSWER THE FOLLOWING</legend>
+			
+			<form onsubmit="event.preventDefault();">
+				<p>1. Define abstraction</p><br>
+				<input type="radio" id="choice1_1" name="qn1" value=""/>
+				<label for="choice1_1">The removal of several steps leaving only relevant data</label><br>
+				<input type="radio" id="choice2_1" name="qn1" value=""/>
+				<label for="choice2_1">Blocking someone from performing an action</label><br>
+				<input type="radio" id="choice3_1" name="qn1" value=""/>
+				<label for="choice3_1">Storing data into tables</label><br>
+				<input type="radio" id="choice4_1" name="qn1" value=""/>
+				<label for="choice4_1">Removing necessary sections of code from overall code</label><br>
+				<p id="varError1"></p>
 
+				<p>2. Define object oriented programming</p><br>
+				<input type="radio" id="choice1_2" name="qn2" value=""/>
+				<label for="choice1_2">Programming where only one main method is used</label><br>
+				<input type="radio" id="choice2_2" name="qn2" value=""/>
+				<label for="choice2_2">Programming where several sub-methods are used to solve a larger problem</label><br>
+				<input type="radio" id="choice3_2" name="qn2" value=""/>
+				<label for="choice3_2">Programming where data in tables, forms and reports</label><br>
+				<input type="radio" id="choice4_2" name="qn2" value=""/>
+				<label for="choice4_2">Programming where all variables are global variables</label><br>
+				<p id="varError2"></p>
+
+				<p>3. Define a class</p><br>
+				<input type="radio" id="choice1_3" name="qn3" value=""/>
+				<label for="choice1_3">An instance of a variable</label><br>
+				<input type="radio" id="choice2_3" name="qn3" value=""/>
+				<label for="choice2_3">A section of the overall code that solves a subproblem</label><br>
+				<input type="radio" id="choice3_3" name="qn3" value=""/>
+				<label for="choice3_3">The removal of several steps leaving only relevant data</label><br>
+				<input type="radio" id="choice4_3" name="qn3" value=""/>
+				<label for="choice4_3">Blocking someone from performing an action</label><br>
+				<p id="varError3"></p>
+
+				<p>4. What is the use of public in "public static void main(String args[])"?</p><br>
+				<input type="radio" id="choice1_4" name="qn4" value=""/>
+				<label for="choice1_4">Any user can use the instruction</label><br>
+				<input type="radio" id="choice2_4" name="qn4" value=""/>
+				<label for="choice2_4">Variables and methods are only accesible to the method they are created</label><br>
+				<input type="radio" id="choice3_4" name="qn4" value=""/>
+				<label for="choice3_4">Variables and methods are accesible to all methods in the package</label><br>
+				<input type="radio" id="choice4_4" name="qn4" value=""/>
+				<label for="choice4_4">Variables and methods are acesible to other sub-methods in the same package
+				</label><br>
+				<p id="varError4"></p>
+
+				<p>5. Determine the running time of the "Hello World" program</p><br>
+				<input type="radio" id="choice1_5" name="qn5" value=""/>
+				<label for="choice1_5">O(n)</label><br>
+				<input type="radio" id="choice2_5" name="qn5" value=""/>
+				<label for="choice2_5">O(1)</label><br>
+				<input type="radio" id="choice3_5" name="qn5" value=""/>
+				<label for="choice3_5">O(n^2)</label><br>
+				<input type="radio" id="choice4_5" name="qn5" value=""/>
+				<label for="choice4_5">none of the above</label><br>
+				<p id="varError5"></p>
+
+				<center>
+					<button id="" onclick="onSubmit();alert('Submit all and finish?');">FINISH ATTEMPT
+					</button>
+					
+				</center>
+			</form>
+			
+		</fieldset>
+	</div>
 </body>
-<script type="text/JavaScript">
-/** @Author: wolverine, spiderman, joker, wonder woman
-  * @Date: Sun 22 Oct 2023 17:20:00 +0300
-  * @LastModifiedBy: greatsilas23
-  * @LastModifiedDate: Sun 22 Oct 2023 17:29:00 +0300
-  **/
-
-class Record{
-constructor(){
-this.id = "02"
-this.name = "customer"
+<script>
+var score=0;
+var percentage=0;
+function onSubmit()
+{
+	var name=document.getElementById("name").value;
+	var e_mail=document.getElementById("e-mail").value;
+	
+	if(document.getElementById("choice1_1").checked)
+		document.getElementById("varError1").innerHTML="correct answer";
+		//score=score+1;
+	else 
+		document.getElementById("varError1").innerHTML="correct answer is (a): The removal of several steps leaving only relevant data";
+	if(document.getElementById("choice2_2").checked)
+		document.getElementById("varError2").innerHTML="correct answer";
+		//score=score+1;
+	else
+		document.getElementById("varError2").innerHTML="correct answer is (b): Programming where several sub-methods are used to solve a larger problem";
+	if(document.getElementById("choice1_3").checked)
+		document.getElementById("varError3").innerHTML="correct answer";
+		//score=score+1;
+	else
+		document.getElementById("varError3").innerHTML="correct answer is (a): An instance of a variable";
+	if(document.getElementById("choice3_4").checked)
+		document.getElementById("varError4").innerHTML="correct answer";
+		//score=score+1;
+	else
+		document.getElementById("varError4").innerHTML="correct answer is (c): Variables and methods are accesible to all methods in the package";
+	if(document.getElementById("choice1_5").checked)
+		document.getElementById("varError5").innerHTML="correct answer";
+		//score=score+1;
+	else
+		document.getElementById("varError5").innerHTML="correct answer is (a): O(n)";
+	
+	
+	if(document.getElementById("choice1_1").checked)
+		score+=1;
+	if(document.getElementById("choice2_2").checked)
+		score+=1;
+	if(document.getElementById("choice1_3").checked)
+		score+=1;
+	if(document.getElementById("choice3_4").checked)
+		score+=1;
+	if(document.getElementById("choice1_5").checked)
+		score+=1;
+	percentage=(score/5)*100
+	document.getElementById("score").innerHTML=`Congratulations ${name}: score: (${score}/5) percentage: ${percentage}`;
 }
-}
-
-class Account{
-constructor(userName, userPass){
-this.username = userName
-this.password = userPass
-this.isRegistered = false
-this.termsAndConditions = `<form action="" on submit="register()" method="" target="">
-<label for="termsAndConditions">
-health-inventory-app
-Kenya lies across the equator and borders Somalia, Ethiopia, Tanzania, Uganda, Sudan, and the Indian Ocean. British rule in Kenya lasted for nearly 70 years between 1895 and 1963. Their style of governance their approach to land acquisition ownership, use and management their philosophy and patterns of wildlife conservation
-
-Policy
-Introduction
-Service Provider
-These terms are between you and health-inventory-app
-
-Age and eligibility requirements
-In order to use the health-inventory-app and access any content you need to be 13 years of age (or equivalent minimum age in your country) or older, have parental or guardian consent if you are a minor in your home country, have the power to enter into a binding contract with us and not be barred from doing so under any applicable laws, reside in a country where the service is available
-
-health-inventory-app Provided By Us
-health-inventory-app Options
-We provide numerous health-inventory-app Options
-
-Trials
-From time to time we or others on our behalf may offer trials of paid subscription for a specified period without payment or at a reduced rate Third Party Applications, Devices and Open Source Software
-
-Third-Party Applications, Devices And Open Source Software
-The health-inventory-app may be integrated with, or may otherwise interact with third party applications websites and services and third-party personal computers and mobile handsets
-
-Service Limitations and Modifications
-We use reasonable Care and skill to keep the health-inventory-app operational
-
-Your Use of The health-inventory-app
-Creating a health-inventory-app account
-You may need to create a health-inventory-app Account to use
-
-Your rights to use the health-inventory-app
-Access to health-inventory-app
-Subject to your compliance with these Terms, we grant you limited, non-exclusive, revocable permission to make personal non-commercial use of the health-inventory-app and the Content
-
-health-inventory-app's proprietary rights
-The health-inventory-app and the content are the property of health-inventory-app or health-inventory-app's licensors
-
-Payments and cancellation
-You may purchase from health-inventory-app
-</label><input id="termsAndConditions"> type="checkbox"/></form>`
-this.account = this.username.concat(this.password)
-}
-getAccount(){
-return this.termsAndConditions
-}
-}
-
-class Body{
-constructor(){
-this.header = `<header>
-    <img src="./resources/logo.png" width="40" height="40" alt="logo"/>
-
- </header>`
-
-this.nav = `<nav></nav>`
-this.aside = `<aside></aside>`
-this.article = `<form action="" method=post" target="">
-<label for="userName">username</label><br><input type="text" id="userName"/><br><label for="userPass"><br><input type="password" id="userPass"/><br>
-${new Account().getTermsAndConditions()}
-<input type="submit"/>
-</form>`
-this.footer =`<footer>health-inventory-app copyright ${&copy;} nyamwas 2023</footer>`
-this.body = this.header.concat(this.nav).concat(this.aside).concat(this.article).concat(this.footer)
-}
-
-getBody(){
-this.body !== null ? return this.body : console.log('err')
-}
-close(){
-return this.body == null
-}
-}
-
-function register(){
-let account = new Account("02","admin")
-const form = document.querySelector('form')
-
-form.termsAndConditions.checked == true ? return account.isRegistered = true : console.log('err')
-}
-
-
-const body = document.querySelector('body')
-
-const form = document.querySelector('form')
-body.onload(() => {
-const sim_start_time = new Date().getMinutes()
-let myBody = new Body()
-body.innerHTML += myBody.getBody()
-const sim_end_time = 0
-
-const sim_time = sim_end_time - sim_start_time
-const mean_interrarival = 1.0
-const mean_service = 1.0
-const average_delay = 0.0
-const area_status = 0.0
-const server_utilization = area_status / sim_time
-
-form.addEventListener('submit', () => {
-let result = new Object({userPass: null, userName: null})
-localStorage.setItem(result, new Object({ password: form.userPass, username: form.userName}))
-})
-myBody.close()
-
-
-
-}).then(() => console.log(new Record().id))
+	
+</script>
 </html>
-
-
